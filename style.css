@@ -5,6 +5,7 @@
     font-size: 10px;
 }
 
+
 .home{
     width: 100%;
     min-height: 100vh;
@@ -30,6 +31,10 @@ img{
 .logo{
     flex: 1;
 }
+.cart-icon{
+    width: 30px;
+}
+
 
 
 
@@ -76,6 +81,7 @@ img{
     width: 65%;
     margin: auto;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 
@@ -102,6 +108,7 @@ margin: 2rem 0;
 }
 .f-p .container2{
     justify-content: space-between;
+    gap: 2rem;
 }
 .f-p-i-img{
     width: 225px;
@@ -195,8 +202,9 @@ h6{
     width: 300px;
     text-align: center;
 }
-.footer-items:nth-child(1){
-    text-align: left;
+.footer-items-1{
+    text-align: center;
+    flex-direction: column;
 }
 .footer-items h3{
     color: white;
@@ -242,4 +250,20 @@ a{
 .flex{
     display: flex;
     align-items: center;
+}
+
+
+@media only screen and (max-width: 600px){
+    .h-r{
+        width: 400px;
+    }
+    
+    .m-q{
+        flex-direction: column;
+    }
+    .footer-items-1{
+        text-align: center;
+        flex-direction: column;
+    }
+
 }
